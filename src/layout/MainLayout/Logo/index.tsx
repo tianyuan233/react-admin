@@ -1,13 +1,11 @@
-import { Link } from 'react-router-dom';
+import {Avatar} from '@mui/material';
+import {useTheme} from "@mui/material/styles";
 
-import { ButtonBase } from '@mui/material';
-
-const LogoSection = () => {
+const Logo = () => {
+  const theme = useTheme();
   return (
-    <ButtonBase disableRipple onClick={() => {}} component={Link} to="/">
-      <img src="" alt="" />
-    </ButtonBase>
+    <Avatar sx={{backgroundColor: theme.palette.primary.main}}>N</Avatar>
   );
 };
 
-export default LogoSection;
+export default Logo;

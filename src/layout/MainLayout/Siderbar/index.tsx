@@ -5,9 +5,8 @@ import MenuList from "./MenuList";
 interface Props {
   drawerOpen: boolean;
   drawerToggle: () => void;
-  window?: object;
 }
-const Index = ({ drawerOpen, drawerToggle, window }: Props) => {
+const Index = ({ drawerOpen, drawerToggle }: Props) => {
   const theme = useTheme();
   const content = (
     <>
@@ -28,9 +27,6 @@ const Index = ({ drawerOpen, drawerToggle, window }: Props) => {
     </>
   );
 
-  const container =
-    window !== undefined ? () => window.document.body : undefined;
-
   return (
     <Box
       component="nav"
@@ -38,7 +34,6 @@ const Index = ({ drawerOpen, drawerToggle, window }: Props) => {
       aria-label="mailbox folders"
     >
       <Drawer
-        container={container}
         variant="persistent"
         anchor="left"
         hideBackdrop={true}

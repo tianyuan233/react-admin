@@ -13,7 +13,7 @@ const pages = {
       id: 'default',
       title: 'pages',
       type: 'item',
-      url: '/pages/default',
+      url: '/',
       icon: PieChartIcon,
       breadcrumbs: false
     }

@@ -9,7 +9,6 @@ const MenuList = () => {
       if (item.type === 'group') {
         return <NavGroup key={index} item={item} />
       }
-
     })}
     </>
   )
