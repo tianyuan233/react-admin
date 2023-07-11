@@ -1,10 +1,21 @@
-import {Avatar} from '@mui/material';
-import {useTheme} from "@mui/material/styles";
+import {useTheme,styled} from "@mui/material/styles";
+import {logoText} from "@/store/constant.ts";
 
 const Logo = () => {
   const theme = useTheme();
+
+  const LogoDiv = styled('div')(() => ({
+    color: theme.palette.primary.dark,
+    fontWeight: 800,
+    fontSize: 18,
+    letterSpacing: 1,
+    height: 40,
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+    }));
   return (
-    <Avatar sx={{backgroundColor: theme.palette.primary.main}}>N</Avatar>
+    <LogoDiv>{logoText}</LogoDiv>
   );
 };
 
