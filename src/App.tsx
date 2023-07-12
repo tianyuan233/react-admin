@@ -16,10 +16,10 @@ function App() {
         light: indigo[100],
         dark: indigo[800],
         main: indigo[500],
-        contrastText: "#fff"
+        contrastText: "#fff",
       },
       background: {
-        default: "#fff"
+        default: "#ffffff",
       }
     },
     mixins: {

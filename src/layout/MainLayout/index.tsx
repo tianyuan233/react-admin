@@ -5,8 +5,9 @@ import Header from "./Header";
 import Siderbar from "./Siderbar";
 import Main from "./Main";
 import { useState } from "react";
+import {Outlet} from "react-router-dom";
 
-const Index = () => {
+const MainLayout = () => {
   const theme = useTheme();
   const [drawerOpened, setDrawerOpened] = useState(false);
   const onDrawerToggle = () => {
@@ -32,9 +33,11 @@ const Index = () => {
         drawerOpen={drawerOpened}
         drawerToggle={onDrawerToggle}
       ></Siderbar>
-      <Main></Main>
+      <Main open={drawerOpened}>
+        <Outlet/>
+      </Main>
     </Box>
   );
 };
 
-export default Index;
+export default MainLayout;

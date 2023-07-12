@@ -1,5 +1,9 @@
 # walle-ui
 
+<div align="center">
+<image src="./src/assets/walle.jpg" width="200" height="200" />
+</div>
+
 [![Version](https://img.shields.io/badge/version-0.0.1-blue.svg)](https://semver.org)
 
 `walle-ui` is an admin template built using React and Material-UI. It provides a set of UI components and layouts for creating powerful and responsive admin dashboards.

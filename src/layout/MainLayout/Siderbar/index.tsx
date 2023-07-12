@@ -6,7 +6,7 @@ interface Props {
   drawerOpen: boolean;
   drawerToggle: () => void;
 }
-const Index = ({ drawerOpen, drawerToggle }: Props) => {
+const Sidebar = ({ drawerOpen, drawerToggle }: Props) => {
   const theme = useTheme();
   const content = (
     <>
@@ -30,8 +30,7 @@ const Index = ({ drawerOpen, drawerToggle }: Props) => {
   return (
     <Box
       component="nav"
-      sx={{ flexShrink: { md: 0 }, width: drawerWidth }}
-      aria-label="mailbox folders"
+      sx={{ flexShrink: 0, width: drawerWidth }}
     >
       <Drawer
         variant="persistent"
@@ -58,4 +57,4 @@ const Index = ({ drawerOpen, drawerToggle }: Props) => {
   );
 };
 
-export default Index;
+export default Sidebar;

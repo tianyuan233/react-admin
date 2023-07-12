@@ -1,4 +1,4 @@
-import {useTheme,styled} from "@mui/material/styles";
+import {useTheme, styled} from "@mui/material/styles";
 import {logoText} from "@/store/constant.ts";
 
 const Logo = () => {
@@ -13,7 +13,7 @@ const Logo = () => {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'flex-start',
-    }));
+  }));
   return (
     <LogoDiv>{logoText}</LogoDiv>
   );
