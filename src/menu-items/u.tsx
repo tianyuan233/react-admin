@@ -16,30 +16,6 @@ const utilities = {
   type: 'group',
   children: [
     {
-      id: 'util-typography',
-      title: 'Typography',
-      type: 'item',
-      url: '/',
-      icon: icons.IconFace,
-      breadcrumbs: false
-    },
-    {
-      id: 'util-color',
-      title: 'Color',
-      type: 'item',
-      url: '/',
-      icon: icons.IconFace2,
-      breadcrumbs: false
-    },
-    {
-      id: 'util-shadow',
-      title: 'Shadow',
-      type: 'item',
-      url: '/',
-      icon: icons.IconFace3,
-      breadcrumbs: false
-    },
-    {
       id: 'icons',
       title: 'Icons',
       type: 'collapse',
